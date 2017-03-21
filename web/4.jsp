@@ -15,7 +15,6 @@
     <jsp:useBean id="a"    class="com.weikun.A.Animal">
         <jsp:setProperty name="a" property="name" value="狗"/>
     </jsp:useBean>
-
     <%
         Animal a1=new Animal();
 
@@ -24,5 +23,7 @@
     %>
 
     <%=a.getName()%>
+
+    <a href="2.jsp">点击</a>
 </body>
 </html>

@@ -14,10 +14,15 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <form name="form1" action="1.jsp" enctype="application/x-www-form-urlencoded"
-          method="get">
+    <%
+        request.setAttribute("user",000);
+    %>
+    <form name="form1" action="8.jsp" enctype="application/x-www-form-urlencoded"
+          method="post">
         用户名：<input type="text" name="username" />
         密码：<input type="text" name="pwd" />
+
+
         <input type="submit" value="submit"/>
     </form>
 </body>
