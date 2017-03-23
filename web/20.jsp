@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2017/3/21
-  Time: 19:38
+  Date: 2017/3/23
+  Time: 18:20
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,16 +11,12 @@
     <title>Title</title>
 </head>
 <body>
-    <%
-        String color[]=request.getParameterValues("color");
-        for(String s :color){
-     %>
-            <%=s%>
-    <%
-        }
+<%
 
+    //response.setContentType("text/html");
+    response.sendRedirect("1.jsp");//不点击的超链接--重定向
+    //window.location=""
+%>
 
-    %>
-<%=request.getQueryString()%>
 </body>
 </html>

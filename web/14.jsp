@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2017/3/21
-  Time: 19:38
+  Date: 2017/3/23
+  Time: 17:17
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,16 +11,22 @@
     <title>Title</title>
 </head>
 <body>
-    <%
-        String color[]=request.getParameterValues("color");
-        for(String s :color){
-     %>
-            <%=s%>
-    <%
-        }
+        <%=
 
+        request.getAttribute("DEF")
+        %>
+    <%
+
+        session.removeAttribute("ABC");
 
     %>
-<%=request.getQueryString()%>
+    <%=
+
+        session.getAttribute("ABC")
+    %>
+    <%
+
+        session.invalidate();
+    %>
 </body>
 </html>

@@ -11,7 +11,7 @@
     <meta http-equiv="content-type" content="text/html; charset=GBK">
 </head>
 <body>
-<form method="post" action="12.jsp" name="form1"><!-- post方式 -->
+<form method="get" action="12.jsp" name="form1"><!-- post方式 -->
     <table>
         <tr>
             <td>
