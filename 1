@@ -1,0 +1,20 @@
+request:  IE--->Tomcat
+response:  Tomcat--->IE
+
+
+   request:仅能用在有请求关系，且一次访问tomcat的条件下。
+   session：既然他可以跨页取值，赋值，没有关系也可以。
+   	setAttribute,getAttribute,removeAttribute invalidate
+   application:所有页都可以传，没时间限制
+
+   在线访客，
+   访客：
+    请求关系
+    好使
+   page<request<session<application
+
+   PageContext:page request session application(ServletContext)
+
+
+   @include     :指令，他不能传参 先合成后编译
+   <jsp:include ：动作，他能传参 先编译后合成
